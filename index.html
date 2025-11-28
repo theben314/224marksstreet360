@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>224 Marks 360 Tour</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-backyard">
+        <li class="text">Backyard</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-basement-bathroom">
+        <li class="text">Basement Bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-basement-leading-to-inside-of-room-002">
+        <li class="text">Basement LEADING to inside of room 002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-basement-inside-room-002">
+        <li class="text">Basement INSIDE room 002</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-basement-room-001">
+        <li class="text">Basement room 001</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-basement">
+        <li class="text">Basement</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-front-driveway-to-front-door">
+        <li class="text">FRONT DRIVEWAY TO FRONT DOOR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-front-porch-to-into-mainfloor-and-second-floor">
+        <li class="text">FRONT PORCH TO INTO MAINFLOOR AND SECOND FLOOR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-mainfloor-bedroom-01">
+        <li class="text">Mainfloor Bedroom 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-mainfloor-bedrooms-02-and-03">
+        <li class="text">Mainfloor bedrooms 02 and 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-mainfloor-inside-bedroom-02">
+        <li class="text">Mainfloor INSIDE bedroom 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-mainfloor-inside-bedroom-03">
+        <li class="text">Mainfloor INSIDE bedroom 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-mainfloor-kitchen-coming-from-bedroom-02-and-03">
+        <li class="text">Mainfloor Kitchen Coming from bedroom 02 and 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-mainfloor-laundry-area-to-backdoor">
+        <li class="text">Mainfloor laundry area to backdoor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-second-floor-bathroom">
+        <li class="text">Second floor bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-second-floor-bedroom-21">
+        <li class="text">Second floor bedroom 21</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-second-floor-bedroom-22">
+        <li class="text">Second floor bedroom 22</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-second-floor-bedroom-23">
+        <li class="text">Second floor bedroom 23</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-second-floor">
+        <li class="text">Second Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-third-floor-area">
+        <li class="text">Third floor area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-third-floor-bathroom">
+        <li class="text">Third floor bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-third-floor-bedroom-31">
+        <li class="text">Third floor bedroom 31</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-third-floor-bedroom-32">
+        <li class="text">Third floor bedroom 32</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
